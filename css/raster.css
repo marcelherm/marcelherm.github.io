@@ -1,0 +1,521 @@
+@charset "utf-8";
+/* Einfache fließende Medien
+   Hinweis: Für fließende Medien müssen Sie die Attribute 'height' und 'width' des Medium aus dem HTML-Code entfernen
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	
+}
+body {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20px;
+}
+
+.starter-template {
+	text-align: center;
+	padding-top: 40px;
+	padding-right: 15px;
+	padding-bottom: 40px;
+	padding-left: 15px;
+}
+
+h4 {
+	orphans: 3; widows: 3;
+	page-break-after: avoid;
+	font-size: 60px;
+	font-weight: bold;
+}
+
+h5 {
+	page-break-after: avoid;
+	orphans: 3; widows: 3; 
+	font-size: 18px;
+}
+
+a:link, a:visited, a:active, a.focus {
+	color: rgb(0,0,0);
+	font-size: 24px;
+	font: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(255,255,255);
+}
+
+img, object, embed, video {
+	max-width: 100%;
+	height: auto;
+	float: left;
+	
+}
+
+/* IE 6 unterstützt keine maximale Breite, verwenden Sie daher eine Standardbreite von 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver-Eigenschaften für fließende Raster
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	5;
+	
+	Idee durch den Artikel "Responsive Web Design" von Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	und "Golden Grid System" von Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Layout für Mobilgeräte: 480 px oder weniger. */
+
+
+.platz {
+	background-color: rgb(255,255,255);
+	}
+	
+.gridContainer {
+	
+	max-width: 1240px;
+	padding-left: 0px;
+	padding-right: 0px;
+	background-color: #FFFFFF;
+}
+
+#logo {
+	clear: both;
+	float: left;
+	margin-left: 0px;
+	width: 100%;
+	display: block;
+	background-color: rgba(0,0,0,1);
+	background-image: url(../../zuckerguata/images/logo1.jpg);
+	}
+
+#atmo {
+	clear: both;
+	float: left;
+	width: 100%;
+	display: block;
+	background-color: rgba(255,255,255,1);
+}
+
+#navi {
+	clear: both;
+	float: left;
+	margin-left: 0px;
+	width: 100%;
+	display: block;
+	background-color: #CCCCCC;
+}
+#navi ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	
+}
+#navi ul li a {
+	
+	text-align: center;
+	display: block;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom-color: rgba(255,255,255,1);
+	-webkit-transition-property: all;
+	-moz-transition-property: all;
+	-ms-transition-property: all;
+	-o-transition-property: all;
+	transition-property: all;
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+	-webkit-transition-timing-function: linear;
+	-moz-transition-timing-function: linear;
+	-ms-transition-timing-function: linear;
+	-o-transition-timing-function: linear;
+	transition-timing-function: linear;
+	-webkit-transition-delay: 0s;
+	-moz-transition-delay: 0s;
+	-ms-transition-delay: 0s;
+	-o-transition-delay: 0s;
+	transition-delay: 0s;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	font-size: large;
+}
+
+
+
+#inhalt1 {
+	clear: both;
+	float: left;
+	margin-left: 0px;
+	width: 100%;
+	display: block;
+	background-color: rgba(255,255,255,1);
+	padding-top: 0px;
+	padding-right: 20px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	position: relative;
+}
+
+#inhalt2 {
+	clear: both;
+	float: left;
+	width: 100%;
+	margin-left: 0px;
+	display: block;
+	background-color: rgba(255,255,255,1);
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 20px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+
+
+
+#eichhoernchin {
+	float: right;
+	padding-left: 7px;
+	height:auto;
+	float: left;
+	padding-right:7px;
+}
+
+
+
+#inhalt3 {
+	clear: both;
+	float: left;
+	margin-left: 0px;
+	width: 100%;
+	display: block;
+	background-color: rgba(255,255,255,1);
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+
+
+#inhalt4 {
+	clear: both;
+	float: left;
+	margin-left: 0px;
+	width: 100%;
+	display: block;
+	background-color: rgba(255,255,255,1);
+	padding-top: 0px;
+	padding-right: 20px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+
+#fuss {
+	clear: both;
+	float: left;
+	margin-left: 0px;
+	width: 100%;
+	display: block;
+	background-color: rgba(255,255,255,1);
+}
+#fuss img {
+	float: none;
+	}
+
+.boxfuss {
+	padding: 10px;
+	text-align: center;
+	background-color: rgb(235,235,231,1);
+	width: 100%;
+}
+
+.button {
+	background-color: #CCCCCC;
+	border: none;
+	color: rgb(51,51,51);
+	padding: 20px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 50%;
+	font-weight: bold;
+	}
+
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+@media only screen and (min-width: 481px) {
+
+.gridContainer {
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+	
+}
+#logo {
+	clear: both;
+	float: left;
+	margin-left: 0px;
+	width: 100%;
+	display: block;
+}
+#atmo {
+	clear: both;
+	float: left;
+	margin-left: 0px;
+	width: 100%;
+	display: block;
+}
+#navi {
+	clear: both;
+	float: left;
+	margin-left: 0px;
+	width: 100%;
+	display: block;
+	background-color: #FFFFFF;
+}
+	
+#navi ul li a {
+	text-align: left;
+	width: 16.6667%;
+	float: left;
+	padding-left: 10px;
+	
+}
+
+#inhalt1 {
+	clear: both;
+	float: left;
+	margin-left: 0px;
+	width: 100%;
+	display: block;
+	padding-top: 40px;
+	padding-right: 40px;
+	padding-bottom: 40px;
+	padding-left: 40px;
+}
+
+#inhalt2 {
+	clear: none;
+	float: left;
+	margin-left: 0px;
+	width: 100%;
+	display: block;
+	padding-top: 40px;
+	padding-right: 40px;
+	padding-bottom: 40px;
+	padding-left: 40px;
+ }
+
+
+#inhalt3 {
+	clear: none;
+	float: left;
+	margin-left: 0px;
+	width: 100%;
+	display: block;
+	padding: 10px;
+	padding-top: 40px;
+	padding-right: 40px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+}
+
+#inhalt4 {
+	clear: none;
+	float: left;
+	margin-left: 0px;
+	width: 100%;
+	display: block;
+	padding: 10px;
+	padding-top: 40px;
+	padding-right: 40px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+}
+
+#fuss {
+	clear: both;
+	float: left;
+	margin-left: 0px;
+	width: 100%;
+	display: block;
+}
+
+.boxfuss   {
+	padding: 10px;
+	text-align: center;
+}
+.button {
+	background-color: #CCCCCC;
+	border: none;
+	color: rgb(51,51,51);
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 50%;
+	}
+	
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+}
+
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 100%;
+	max-width: 2232px; 
+	padding-left: 0px;
+	padding-right: 0px;
+	margin: auto;
+}
+#logo {
+	clear: both;
+	float: left;
+	margin-left: 0px;
+	width: 100%;
+	display: block;
+	background-position: 100px;
+	padding-left: 100px;
+}
+#atmo {
+	clear: both;
+	float: left;
+	margin-left: 0px;
+	width: 100%;
+	display: block;
+}
+#navi {
+	clear: both;
+	float: left;
+	margin-left: 0px;
+	width: 100%;
+	display: block;
+	background-color: #FFFFFF;
+}
+
+#inhalt1 {
+	clear: none;
+	float: left;
+	margin-left: 0;
+	width: 50%;
+	display: block;
+	padding-top: 40px;
+	padding-right: 40px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+}
+
+#inhalt2 {
+	clear: none ;
+	float: left;
+	margin-left: 0;
+	width: 50%;
+	display: block;
+	
+	padding-top: 60px;
+	padding-right: 40px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+	
+}
+
+#inhalt3 {
+	clear: none;
+	float: left;
+	margin-left: 0;
+	width: 50%;
+	display: block;
+	padding-top: 40px;
+	padding-right: 40px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+}
+
+#inhalt4 {
+	clear: none;
+	float: left;
+	margin-left: 0;
+	width: 50%;
+	display: block;
+	padding-top: 50px;
+	padding-right: 40px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+}
+
+
+
+#fuss {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+.zeile {
+	display: table;
+	width: 100%;
+}
+
+
+
+.boxfuss   {
+	display: table-cell;
+	padding: 10px;
+	text-align: center;
+	width: 33.3333%;
+}
+
+.button {
+	background-color: #CCCCCC;
+	border: none;
+	color: rgb(51,51,51);
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 50%;
+	}
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#navi ul li a:hover {
+	background-color: rgb(0,0,0);
+}
+.gridContainer.clearfix #inhalt2 p {
+	text-align: center;
+}
+.gridContainer.clearfix #inhalt2 p {
+	text-align: justify;
+}
+}
